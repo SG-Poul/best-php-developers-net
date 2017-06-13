@@ -8,64 +8,7 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-#top-header-div {
-  background-color: #ffffff;
-  background-image: -webkit-linear-gradient(-25deg, #ffffff 50%, #113559 50%);
-  min-height: 100px;
-}
+// Layout
+@import "masterLayout";
 
-#header-logo-div {
-  padding: 20px 0;
 
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-#header-navbar {
-  a {
-    margin-right: 10px;
-    font-weight: bold;
-  }
-  margin: 40px 30px;
-  a:link, a:visited, a:hover, a:active {
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-}
-
-#nav-bar-main {
-  background-color: #113559;
-  background-image: -webkit-linear-gradient(-25deg, #113559 30%, #0a2b4a 30%);
-  min-height: 60px;
-
-  img {
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-    //margin-bottom: 30px;
-    //margin-right: 11px;
-  }
-
-  #phone-table {
-    display: inline-block;
-    margin-top: 5px;
-    color: #ffffff;
-
-    td {
-      padding-left: 10px;
-    }
-
-    .nav-custom {
-      display: table;
-
-      li {
-        position: relative;
-        display: block;
-        padding: 10px 15px;
-      }
-    }
-  }
-}
