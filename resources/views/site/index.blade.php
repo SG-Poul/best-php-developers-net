@@ -64,4 +64,54 @@
         </a>
     </div><!-- /.carousel -->
 
+    <div id="count-dev-exp">
+        <span><span class="blue-span">120</span> professional senior PHP developers / <span class="blue-span">7</span>
+            years experience</span>
+    </div>
+
+    <div id="php-choice">
+        <div class="container">
+            <div class="centered">
+                <h1><strong>PHP </strong>Development</h1>
+                <p>
+                    PHP development is an optimal choice <br/> for every business at least because it is:
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="/img/index-earth-ico.png">
+                    <div class="centered">
+                        <h1><strong>Scalable</strong></h1>
+                        <p>
+                            Scalable and universally usable with a variety of portals and libraries.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/index-phone-ico.png">
+                    <div class="centered">
+                        <h1><strong>Flexible</strong></h1>
+                        <p>
+                            Flexible and easily compatible with the majority of the existing platforms.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/index-free-ico.png">
+                    <div class="centered">
+                        <h1><strong>Free</strong></h1>
+                        <p>
+                            You cannot find any other web development tool that is as free and functional as PHP.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="centered">
+                <p><a class="btn btn-lg btn-primary hire-button" href="#" role="button">Hire PHP Developers <span
+                                class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></p>
+            </div>
+        </div>
+    </div>
+
 @endsection

@@ -98,7 +98,7 @@
     </div>
 </div>
 
-@yield('content');
+@yield('content')
 
 <div id="main-footer">
     <div class="container">
@@ -122,7 +122,7 @@
 </div>
 
 <script src="/js/app.js"></script>
-@yield('script');
+@yield('script')
 
 </body>
 </html>
