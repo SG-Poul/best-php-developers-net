@@ -121,3 +121,36 @@
   background-size: contain;
   background-position: center;
 }
+
+#benefits-section {
+  color: #6082bb;
+  min-height: 600px;
+  background-color: #f5f6f6;
+  background-image: url("/img/index-benefits-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  .col-sm-4 {
+    padding: 10px;
+    text-align: center;
+    img {
+      position: relative;
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+    }
+    .centered > p {
+      padding: 0 15%;
+    }
+  }
+}
+
+@media only screen and (min-width:768px) {
+  #benefits-section {
+    .col-sm-4.downed {
+      padding-top: 100px;
+    }
+  }
+}

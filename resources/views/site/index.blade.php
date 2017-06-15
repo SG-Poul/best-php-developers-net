@@ -108,8 +108,11 @@
             </div>
 
             <div class="centered">
-                <p><a class="btn btn-lg btn-primary hire-button" href="#" role="button">Hire PHP Developers <span
-                                class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></p>
+                <p><a class="btn btn-lg btn-primary hire-button" href="#" role="button">
+                        Hire PHP Developers
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </a>
+                </p>
             </div>
         </div>
     </div>
@@ -131,22 +134,26 @@
                             <br/>
                         </div>
                         <div class="col-sm-6">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email *" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email *"
+                                   required>
                             <br/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="skype" name="skype" placeholder="Skype *" required>
+                            <input type="text" class="form-control" id="skype" name="skype" placeholder="Skype *"
+                                   required>
                             <br/>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone *" required>
+                            <input type="text" class="form-control" id="telephone" name="telephone"
+                                   placeholder="Telephone *" required>
                             <br/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="body" name="title" rows="3" placeholder="Requirements"></textarea>
+                        <textarea class="form-control" id="body" name="title" rows="3"
+                                  placeholder="Requirements"></textarea>
                     </div>
                     <div class="centered">
                         <p>
@@ -162,8 +169,67 @@
         </div>
     </div>
 
-    <div id="logos-section">
+    <div id="logos-section"></div>
 
+    <div id="benefits-section">
+        <div class="container">
+            <div class="centered">
+                <h1>Our <strong>Benefits</strong></h1>
+                With such vast experiance in PHP and MySQL,<br/>we know the pitfalls and can often foresee possible
+                problems.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 downed">
+                    <img src="/img/index-pc-ico.png">
+                    <div class="centered">
+                        <h1><strong>We specialise in</strong></h1>
+                        <p>
+                        <ul>
+                            <li>Hire Programmers</li>
+                            <li>Hire Developers</li>
+                            <li>Hire PHP Developers</li>
+                            <li>Hire PHP Coders</li>
+                            <li>Hire Designers</li>
+                            <li>Hire Quality Assurance Testers</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/index-note-ico.png">
+                    <div class="centered">
+                        <h1><strong>Our services include</strong></h1>
+                        <p>
+                        <ul>
+                            <li>Flexible Business Models</li>
+                            <li>Offshore staffing</li>
+                            <li>120 Qualified Technology Experts</li>
+                            <li>Every Type of IT Service</li>
+                            <li>Offshore outsourcing</li>
+                            <li>Sophisticated Infrastructure</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 downed">
+                    <img src="/img/index-graphic-ico.png">
+                    <div class="centered">
+                        <h1><strong>Benefits of working with us</strong></h1>
+                        <p>
+                        <ul>
+                            <li>Reasonable Prices</li>
+                            <li>Reduce internal overheads</li>
+                            <li>Great Quality of out Work</li>
+                            <li>Distribute Risk</li>
+                            <li>Personnel Project Management</li>
+                            <li>Grow your team</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 @endsection
