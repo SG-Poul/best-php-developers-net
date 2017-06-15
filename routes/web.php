@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'SiteController@index');
+Route::post('/quote', ['before' => 'csrf', 'QuoteController@quote']);

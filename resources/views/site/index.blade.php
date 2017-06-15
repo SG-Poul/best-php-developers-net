@@ -122,7 +122,48 @@
                 <p>Our company really is better than other companies</p>
                 <br/>
             </div>
+            <div class="form-container">
+                <form method="POST" action="/quote">
+                    {{ csrf_field() }}
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name *" required>
+                            <br/>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email *" required>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="skype" name="skype" placeholder="Skype *" required>
+                            <br/>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone *" required>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="body" name="title" rows="3" placeholder="Requirements"></textarea>
+                    </div>
+                    <div class="centered">
+                        <p>
+                            <button type="submit" class="btn btn-lg btn-primary hire-button">
+                                Get a Free offer Now!
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </button>
+                        </p>
+                    </div>
+                    @include('layouts.errors')
+                </form>
+            </div>
         </div>
+    </div>
+
+    <div id="logos-section">
+
     </div>
 
 @endsection

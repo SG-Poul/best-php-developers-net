@@ -106,11 +106,18 @@
 }
 
 #contact-form-section {
-  min-height: 500px;
   background-color: #8d9dab;
   background-image: url("/img/index-form.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #ffffff;
+}
+
+#logos-section {
+  height: 100px;
+  background-image: url("/img/index-logos.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
