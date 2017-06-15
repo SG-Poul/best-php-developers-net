@@ -114,4 +114,15 @@
         </div>
     </div>
 
+    <div id="contact-form-section">
+        <div class="container">
+            <div class="centered">
+                <br/>
+                <h1><strong>You're in Best Company</strong></h1>
+                <p>Our company really is better than other companies</p>
+                <br/>
+            </div>
+        </div>
+    </div>
+
 @endsection
