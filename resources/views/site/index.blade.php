@@ -232,4 +232,52 @@
         </div>
     </div>
 
+    <div id="developers-section">
+        <div class="container">
+            <div class="centered">
+                <h1><strong>PHP</strong> Developers</h1>
+                Some of our leased staff
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 downed">
+                    <img src="/img/index-photo-1-1.png">
+                    <div class="centered">
+                            <p>
+                                <strong>Alexandr Martins</strong><br/>
+                                chief programmer
+                                <br/>
+                                <br/>
+                                You can hire PHP programmers to save your applications development costs.
+                            </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/index-photo-2-1.png">
+                    <div class="centered">
+                        <p>
+                            <strong>Michael Phillips</strong><br/>
+                            seo optimizer
+                            <br/>
+                            <br/>
+                            Professionals use their talent to develop comprehensive solutions based on PHP.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 downed">
+                    <img src="/img/index-photo-3-1.png">
+                    <div class="centered">
+                        <p>
+                            <strong>Stephan Olshansky</strong><br/>
+                            senior copywriter
+                            <br/>
+                            <br/>
+                            Our professionals are always here to provide you with competent assistance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @endsection

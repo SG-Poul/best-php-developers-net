@@ -154,3 +154,43 @@
     }
   }
 }
+
+#developers-section {
+  background-color: #0a2b4a;
+  color: #ffffff;
+
+  .col-sm-4 {
+    padding: 10px;
+    text-align: center;
+
+    background-image: url("/img/index-photo-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 60px;
+
+    img {
+      position: relative;
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+
+      //border-radius: 100%;
+      //background-color: #203e5a;
+      //padding: 40px;
+      //-webkit-box-shadow: 0px 0px 0px 40px rgb(25, 56, 85);
+      //-moz-box-shadow: 0px 0px 0px 40px rgb(25, 56, 85);
+      //box-shadow: 0px 0px 0px 40px rgb(25, 56, 85);
+    }
+
+    .centered > p {
+      padding: 0 15%;
+
+      position: relative;
+      z-index: 1;
+      margin-top: -90px;
+
+      min-height: 160px;
+    }
+  }
+}
