@@ -291,6 +291,11 @@
                 <div class="col-sm-3">
                     <div class="centered">
                         <h3><strong><span>PHP</span><br/>OUTSOURCING</strong></h3>
+                        <a href="#"><img src="/img/index-fb-ico.png"></a>
+                        <a href="#"><img src="/img/index-in-ico.png"></a>
+                        <br/>
+                        <a href="#"><img src="/img/index-go-ico.png"></a>
+                        <a href="#"><img src="/img/index-tw-ico.png"></a>
                     </div>
                 </div>
                 <div class="col-sm-2">
