@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', 'SiteController@index');
+Route::get('/', 'SiteController@index')->name('home');
 Route::post('/quote', ['before' => 'csrf', 'QuoteController@quote']);
 
 Auth::routes();
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/logout', 'AdminController@destroy');
+

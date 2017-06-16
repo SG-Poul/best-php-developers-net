@@ -19,6 +19,10 @@
 
 <body>
 
+@if(Auth::check())
+    @include('layouts.admin-bar')
+@endif
+
 @include('layouts.header')
 
 @yield('content')

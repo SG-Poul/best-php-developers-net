@@ -30,7 +30,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" class="close"><span class="glyphicon glyphicon-off" aria-hidden="true"></span></a></li>
+                <li><a href="{{ url('logout') }}" class="close"><span class="glyphicon glyphicon-off" aria-hidden="true"></span></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

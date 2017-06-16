@@ -25,4 +25,10 @@ class AdminController extends Controller
     {
         return view('auth.login');
     }
+
+    public function destroy ()
+    {
+        auth()->logout();
+        return redirect()->home();
+    }
 }
