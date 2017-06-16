@@ -240,7 +240,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-4 downed">
+                <div class="col-sm-4">
                     <img src="/img/index-photo-1-1.png">
                     <div class="centered">
                             <p>
@@ -264,7 +264,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-4 downed">
+                <div class="col-sm-4">
                     <img src="/img/index-photo-3-1.png">
                     <div class="centered">
                         <p>
@@ -275,6 +275,60 @@
                             Our professionals are always here to provide you with competent assistance.
                         </p>
                     </div>
+                </div>
+            </div>
+            <div class="centered">
+                <br/>
+                <p><a class="btn btn-lg btn-primary hire-button" href="#" role="button">Hire PHP Developers <span
+                                class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="centered">
+                        <h3><strong><span>PHP</span><br/>OUTSOURCING</strong></h3>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <h3><strong>COMPANY</strong></h3>
+                    <a href="#">Overview</a><br/>
+                    <a href="#">Facts and Figures</a><br/>
+                    <a href="#">Why Us</a><br/>
+                    <a href="#">Business Continuity</a><br/>
+                    <a href="#">Quality Management</a><br/>
+                    <a href="#">Methodology</a><br/>
+                </div>
+                <div class="col-sm-2">
+                    <h3><strong>SERVICES</strong></h3>
+                    <a href="#">Core Values</a><br/>
+                    <a href="#">PHP Company</a><br/>
+                    <a href="#">PHP Consulting</a><br/>
+                    <a href="#">PHP Staffing</a><br/>
+                    <a href="#">PHP Services</a><br/>
+                    <a href="#">Testimonials</a><br/>
+                </div>
+                <div class="col-sm-2">
+                    <h3><strong>DEVELOPMENT</strong></h3>
+                    <a href="#">Hire PHP Developers</a><br/>
+                    <a href="#">PHP Coders</a><br/>
+                    <a href="#">PHP Development</a><br/>
+                    <a href="#">PHP Programmers</a><br/>
+                    <a href="#">PHP Programming</a><br/>
+                </div>
+                <div class="col-sm-3">
+                    <h3><strong>IN THE WEB</strong></h3>
+                    <a href="tel:+19299991235">+1 929 999 12 35</a><br/>
+                    <a href="tel:+442035145635">+44 203 514 56 35</a><br/>
+                    <a href="tel:+380567940298">+38 056 794 02 98</a><br/>
+                    <br/>
+                    <h3><strong>E-MAIL</strong></h3>
+                    <a href="mailto:info@best-php-developers.net">info@best-php-developers.net</a><br/>
+                    <h3><strong>SKYPE</strong></h3>
+                    <a href="callto:bestdevelopers">bestdevelopers</a><br/>
                 </div>
             </div>
         </div>
