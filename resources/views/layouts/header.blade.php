@@ -29,17 +29,17 @@
                     <tr>
                         <td rowspan="3"><img src="/img/ph.png"></td>
                         <td style="color: #6082bb; font-weight: bold"> USA  </td>
-                        <td><a href="+19299991235"> +1-929-999-1235 </a></td>
+                        <td><a href="tel:+19299991235"> +1-929-999-1235 </a></td>
                         <td rowspan="3"><img src="/img/sk.png"></td>
                         <td rowspan="3"><a href="callto:bestdevelopers">bestdevelopers</a></td>
                     </tr>
                     <tr>
                         <td style="color: #6082bb; font-weight: bold"> DEU </td>
-                        <td><a href="+442035145635"> +44-203-514-5635 </a></td>
+                        <td><a href="tel:+442035145635"> +44-203-514-5635 </a></td>
                     </tr>
                     <tr>
                         <td style="color: #6082bb; font-weight: bold"> UKR </td>
-                        <td><a href="+380567940298"> +38-056-794-0298 </a></td>
+                        <td><a href="tel:+380567940298"> +38-056-794-0298 </a></td>
                     </tr>
                 </table>
             </div>

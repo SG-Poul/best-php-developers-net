@@ -35,6 +35,7 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
 <div id="admin-panelplaceholder">
 
 </div>

@@ -74,11 +74,22 @@
   }
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin: 0 0 100px; /* bottom = footer height */
+}
+
 #main-footer {
-  //position: absolute;
-  //right: 0;
-  //bottom: 0;
-  //left: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow:hidden;
+
   padding: 4rem;
   background-color: #1f2226;
   color: #ffffff;
