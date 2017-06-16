@@ -129,31 +129,33 @@
                 <form method="POST" action="/quote">
                     {{ csrf_field() }}
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-3 col-sm-offset-3">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Name *" required>
                             <br/>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Email *"
                                    required>
                             <br/>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-3 col-sm-offset-3">
                             <input type="text" class="form-control" id="skype" name="skype" placeholder="Skype *"
                                    required>
                             <br/>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <input type="text" class="form-control" id="telephone" name="telephone"
                                    placeholder="Telephone *" required>
                             <br/>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="body" name="title" rows="3"
-                                  placeholder="Requirements"></textarea>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-group">
+                            <textarea class="form-control" id="body" name="title" rows="3"
+                                                              placeholder="Requirements"></textarea>
+                        </div>
                     </div>
                     <div class="centered">
                         <p>
@@ -243,13 +245,13 @@
                 <div class="col-sm-4">
                     <img src="/img/index-photo-1-1.png">
                     <div class="centered">
-                            <p>
-                                <strong>Alexandr Martins</strong><br/>
-                                chief programmer
-                                <br/>
-                                <br/>
-                                You can hire PHP programmers to save your applications development costs.
-                            </p>
+                        <p>
+                            <strong>Alexandr Martins</strong><br/>
+                            chief programmer
+                            <br/>
+                            <br/>
+                            You can hire PHP programmers to save your applications development costs.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-4">
