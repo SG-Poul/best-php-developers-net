@@ -19,6 +19,13 @@
 
 <body>
 
+<div id="admin-nav">
+
+</div>
+
+
+@include('layouts.admin-bar')
+
 @include('layouts.header')
 
 @yield('content')
