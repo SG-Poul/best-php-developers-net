@@ -6,8 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHP Developers</title>
-    <link href="/css/app.css" rel="stylesheet" type="text/css">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 
 <body>
@@ -42,9 +49,9 @@
                     <tr>
                         <td rowspan="3"><img src="/img/ph.png"></td>
                         <td style="color: #6082bb; font-weight: bold"> USA  </td>
-                        <td> +1-929-999-1235 </td>
+                        <td><a href="+19299991235"> +1-929-999-1235 </a></td>
                         <td rowspan="3"><img src="/img/sk.png"></td>
-                        <td rowspan="3">bestdevelopers</td>
+                        <td rowspan="3"><a href="callto:bestdevelopers">bestdevelopers</a></td>
                         {{--<td rowspan="3"> </td>--}}
                         {{--<td rowspan="3"> <a href="#">PHP Development</a></td>--}}
                         {{--<td rowspan="3"> | </td>--}}
@@ -56,11 +63,11 @@
                     </tr>
                     <tr>
                         <td style="color: #6082bb; font-weight: bold"> DEU </td>
-                        <td> +44-203-514-5635 </td>
+                        <td><a href="+442035145635"> +44-203-514-5635 </a></td>
                     </tr>
                     <tr>
                         <td style="color: #6082bb; font-weight: bold"> UKR </td>
-                        <td> +38-056-794-0298 </td>
+                        <td><a href="+380567940298"> +38-056-794-0298 </a></td>
                     </tr>
                 </table>
             </div>
@@ -121,7 +128,9 @@
     </div>
 </div>
 
-<script src="/js/app.js"></script>
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
+
 @yield('script')
 
 </body>

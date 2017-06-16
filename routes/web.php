@@ -13,3 +13,7 @@
 
 Route::get('/', 'SiteController@index');
 Route::post('/quote', ['before' => 'csrf', 'QuoteController@quote']);
+
+Auth::routes();
+
+Route::get('/admin', 'AdminController@index')->name('admin');
