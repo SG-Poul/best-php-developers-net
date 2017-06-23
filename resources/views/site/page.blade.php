@@ -7,12 +7,18 @@
 
     @if(Auth::check())
         <div class="container">
-            <textarea id="bodyField"></textarea>
-            @ckeditor('bodyField')
+            <form action="/edit" method="POST">
+                {{ csrf_field() }}
+                <textarea id="bodyField" name="body">
+                    <?= $content->body ?>
+                </textarea>
+                <input type="hidden" name="url" value="<?= $content->url ?>">
+                @ckeditor('bodyField')
+            </form>
         </div>
     @else
         <div class="container">
-            content
+            <?= $content->body ?>
         </div>
     @endif
 

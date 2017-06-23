@@ -8,7 +8,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Content;
 use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -22,8 +24,20 @@ class SiteController extends BaseController
         return view('site.index');
     }
 
-    public function page()
+    public function page(Request $request, $page)
     {
-        return view('site.page');
+        $model = Content::where('url', $page)->first();
+        return view('site.page')->with(['content' => $model]);
+    }
+
+    public function edit(Request $request)
+    {
+        $url = $request->input('url');
+        $body = $request->input('body');
+        $model = Content::where('url', $url)->first();
+        $model->body = $body;
+        $model->save();
+
+        return redirect()->route('company', ['page' => $url]);
     }
 }
