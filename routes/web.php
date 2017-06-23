@@ -19,3 +19,5 @@ Auth::routes();
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/logout', 'AdminController@destroy');
 
+Route::get('/php-development', 'SiteController@page');
+

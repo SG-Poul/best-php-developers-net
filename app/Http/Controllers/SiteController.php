@@ -21,4 +21,9 @@ class SiteController extends BaseController
     {
         return view('site.index');
     }
+
+    public function page()
+    {
+        return view('site.page');
+    }
 }

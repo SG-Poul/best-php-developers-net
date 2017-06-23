@@ -777,6 +777,8 @@ module.exports = g;
 
 __webpack_require__(29);
 
+__webpack_require__(48);
+
 window.Vue = __webpack_require__(37);
 
 /**
@@ -41504,6 +41506,26 @@ module.exports = function(module) {
 __webpack_require__(8);
 module.exports = __webpack_require__(9);
 
+
+/***/ }),
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Pavel.R on 23.06.2017.
+ */
+
+$(document).ready(function () {
+  console.log(':test:');
+});
 
 /***/ })
 /******/ ]);

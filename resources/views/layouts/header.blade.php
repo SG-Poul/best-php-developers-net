@@ -24,7 +24,7 @@
 <div id="nav-bar-main">
     <div class="container">
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-5">
                 <table id="phone-table">
                     <tr>
                         <td rowspan="3"><img src="/img/ph.png"></td>
@@ -43,7 +43,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-7">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -57,17 +57,17 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="{{ (Request::is('/') ? 'active' : '') }}">
-                                <a href="{{ url('') }}" style="border-right: 1px solid #6082bb"><i class="fa fa-home"></i> Home</a>
+                            <li class="{{ (Request::is('/php-development') ? 'active' : '') }}">
+                                <a href="{{ url('/php-development') }}" style="border-right: 1px solid #6082bb"><i class="fa fa-home"></i>PHP Development</a>
                             </li>
                             <li class="{{ (Request::is('articles') ? 'active' : '') }}">
-                                <a href="{{ url('articles') }}" style="border-right: 1px solid #6082bb">Articles</a>
+                                <a href="{{ url('articles') }}" style="border-right: 1px solid #6082bb">Hire PHP Developers</a>
                             </li>
                             <li class="{{ (Request::is('about') ? 'active' : '') }}">
-                                <a href="{{ url('about') }}" style="border-right: 1px solid #6082bb">About</a>
+                                <a href="{{ url('about') }}" style="border-right: 1px solid #6082bb">Dedicated PHP Team</a>
                             </li>
                             <li class="{{ (Request::is('contact') ? 'active' : '') }}">
-                                <a href="{{ url('contact') }}">Contact</a>
+                                <a href="{{ url('contact') }}">Company</a>
                             </li>
                         </ul>
                     </div>
