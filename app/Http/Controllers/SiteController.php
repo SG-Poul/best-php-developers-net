@@ -30,6 +30,12 @@ class SiteController extends BaseController
         return view('site.page')->with(['content' => $model]);
     }
 
+    public function services(Request $request, $page)
+    {
+        $model = Content::where('url', $page)->first();
+        return view('site.page-sidebar')->with(['content' => $model]);
+    }
+
     public function edit(Request $request)
     {
         $url = $request->input('url');

@@ -10,12 +10,12 @@
             </div>
             <div class="col-xs-6">
                 <div id="header-navbar">
-                    <a href="/">Home</a>
-                    <a href="/">Prices</a>
-                    <a href="/">Projects</a>
-                    <a href="/">Photos</a>
-                    <a href="/">Contacts</a>
-                    <a href="/">Request free quote</a>
+                    <a href="{{ url('/') }}">Home</a>
+                    <a href="{{ url('/services/prices') }}">Prices</a>
+                    <a href="{{ url('/services/clients') }}">Projects</a>
+                    <a href="{{ url('/') }}">Photos</a>
+                    <a href="{{ url('/services/contacts') }}">Contacts</a>
+                    <a href="{{ url('/') }}">Request free quote</a>
                 </div>
             </div>
         </div>
@@ -57,17 +57,17 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="{{ (Request::is('/php-development') ? 'active' : '') }}">
-                                <a href="{{ url('/php-development') }}" style="border-right: 1px solid #6082bb"><i class="fa fa-home"></i>PHP Development</a>
+                            <li class="{{ (Request::is('/company/php-development') ? 'active' : '') }}">
+                                <a href="{{ url('/company/php-development') }}" style="border-right: 1px solid #6082bb"><i class="fa fa-home"></i>PHP Development</a>
                             </li>
-                            <li class="{{ (Request::is('articles') ? 'active' : '') }}">
-                                <a href="{{ url('articles') }}" style="border-right: 1px solid #6082bb">Hire PHP Developers</a>
+                            <li class="{{ (Request::is('/company/hire-php-developers') ? 'active' : '') }}">
+                                <a href="{{ url('/company/hire-php-developers') }}" style="border-right: 1px solid #6082bb">Hire PHP Developers</a>
                             </li>
-                            <li class="{{ (Request::is('about') ? 'active' : '') }}">
-                                <a href="{{ url('about') }}" style="border-right: 1px solid #6082bb">Dedicated PHP Team</a>
+                            <li class="{{ (Request::is('/company/php-team') ? 'active' : '') }}">
+                                <a href="{{ url('/company/php-team') }}" style="border-right: 1px solid #6082bb">Dedicated PHP Team</a>
                             </li>
-                            <li class="{{ (Request::is('contact') ? 'active' : '') }}">
-                                <a href="{{ url('contact') }}">Company</a>
+                            <li class="{{ (Request::is('/') ? 'active' : '') }}">
+                                <a href="{{ url('/') }}">Company</a>
                             </li>
                         </ul>
                     </div>

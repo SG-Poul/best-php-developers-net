@@ -20,5 +20,6 @@ Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/logout', 'AdminController@destroy');
 
 Route::get('/company/{page}', 'SiteController@page')->name('company');
+Route::get('/services/{page}', 'SiteController@services')->name('services');
 Route::post('/edit', 'SiteController@edit');
 
