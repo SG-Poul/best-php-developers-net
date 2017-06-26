@@ -69,6 +69,62 @@ class CreateContentsTable extends Migration
                 'body' => 'contacts'
             )
         );
+
+        DB::table('contents')->insert(
+            array(
+                'title' => 'About Us',
+                'url' => 'about-us',
+                'body' => 'about-us'
+            )
+        );
+
+        DB::table('contents')->insert(
+            array(
+                'title' => 'PHP Consulting',
+                'url' => 'php-consulting',
+                'body' => 'php-consulting'
+            )
+        );
+
+        DB::table('contents')->insert(
+            array(
+                'title' => 'PHP Outsourcing',
+                'url' => 'php-outsourcing',
+                'body' => 'php-outsourcing'
+            )
+        );
+
+        DB::table('contents')->insert(
+            array(
+                'title' => 'PHP Programmers',
+                'url' => 'php-programmers',
+                'body' => 'php-programmers'
+            )
+        );
+
+        DB::table('contents')->insert(
+            array(
+                'title' => 'PHP Programming',
+                'url' => 'php-programming',
+                'body' => 'php-programming'
+            )
+        );
+
+        DB::table('contents')->insert(
+            array(
+                'title' => 'PHP Services',
+                'url' => 'php-services',
+                'body' => 'php-services'
+            )
+        );
+
+        DB::table('contents')->insert(
+            array(
+                'title' => 'PHP Staffing',
+                'url' => 'php-staffing',
+                'body' => 'php-staffing'
+            )
+        );
     }
 
     /**

@@ -10,15 +10,15 @@
             <form action="/edit" method="POST">
                 {{ csrf_field() }}
                 <textarea id="bodyField" name="body">
-                    {{ $content->body }}
+                    {!! $content->body !!}
                 </textarea>
-                <input type="hidden" name="url" value="{{ $content->url }}">
+                <input type="hidden" name="url" value="{!! $content->url !!}">
                 @ckeditor('bodyField')
             </form>
         </div>
     @else
         <div class="container">
-            {{ $content->body }}
+            {!! $content->body !!}
         </div>
     @endif
 
