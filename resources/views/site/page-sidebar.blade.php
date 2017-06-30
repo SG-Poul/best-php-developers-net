@@ -1,10 +1,6 @@
 @extends ('layouts.master')
 
 @section ('content')
-    {{--@foreach($posts as $post)--}}
-    {{--@include('post.post')--}}
-    {{--@endforeach--}}
-
     <div class="container">
         <br/>
         <div class="row">
@@ -17,13 +13,16 @@
                         @ckeditor('bodyField')
                     </form>
                 @else
-                    <div class="container">{!! $content->body !!}</div>
+                    {!! $content->body !!}
                 @endif
             </div>
             <div class="col-sm-3">
-                @include('layouts.sidebar')
+                <div class="container">
+                    @include('layouts.sidebar')
+                </div>
             </div>
         </div>
+    </div>
 
 
 

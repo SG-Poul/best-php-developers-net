@@ -35,8 +35,6 @@
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
-    //margin-bottom: 30px;
-    //margin-right: 11px;
   }
 
   #phone-table {
@@ -74,18 +72,37 @@
   }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+#contact-form-section {
+  background-color: #8d9dab;
+  background-image: url("/img/index-form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
 }
-body {
-  margin: 0 0 100px; /* bottom = footer height */
+
+#footer-section {
+  background-color: #6082bb;
+  background-image: url("/img/index-footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding-bottom: 20px;
+
+  bottom: 100px;
+
+  a:link, a:visited, a:hover, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  img {
+    margin: 6px 6px;
+  }
 }
 
 #main-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   height: 100px;
   width: 100%;
   overflow:hidden;

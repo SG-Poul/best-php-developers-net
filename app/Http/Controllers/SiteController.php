@@ -44,6 +44,6 @@ class SiteController extends BaseController
         $model->body = $body;
         $model->save();
 
-        return redirect()->route('company', ['page' => $url]);
+        return redirect()->route('services', ['page' => $url]);
     }
 }

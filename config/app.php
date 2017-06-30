@@ -177,7 +177,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+
         JeroenNoten\LaravelCkEditor\ServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -227,6 +231,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Form'      => Collective\Html\FormFacade::class,
+        'HTML'      => Collective\Html\HtmlFacade::class,
+        'Image'     => Intervention\Image\Facades\Image::class
     ],
 
 ];

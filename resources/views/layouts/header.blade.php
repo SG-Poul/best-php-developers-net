@@ -13,7 +13,7 @@
                     <a href="{{ url('/') }}">Home</a>
                     <a href="{{ url('/services/prices') }}">Prices</a>
                     <a href="{{ url('/services/clients') }}">Projects</a>
-                    <a href="{{ url('/') }}">Photos</a>
+                    <a href="{{ url('/gallery') }}">Photos</a>
                     <a href="{{ url('/services/contacts') }}">Contacts</a>
                     <a href="{{ url('/') }}">Request free quote</a>
                 </div>
