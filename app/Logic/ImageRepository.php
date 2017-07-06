@@ -12,9 +12,11 @@ use App\Image;
 
 class ImageRepository
 {
+    private $dirOrigin = 'images/';
+    private $dirIcon = 'images/icon_size/';
+
     public function upload( $form_data )
     {
-
         $validator = Validator::make($form_data, Image::$rules, Image::$messages);
 
         if ($validator->fails()) {
@@ -64,8 +66,7 @@ class ImageRepository
 
     public function createUniqueFilename( $filename, $extension )
     {
-        $full_size_dir = Config::get('images.full_size');
-        $full_image_path = $full_size_dir . $filename . '.' . $extension;
+        $full_image_path = $this->dirOrigin . $filename . '.' . $extension;
 
         if ( File::exists( $full_image_path ) )
         {
@@ -83,7 +84,7 @@ class ImageRepository
     public function original( $photo, $filename )
     {
         $manager = new ImageManager();
-        $image = $manager->make( $photo )->save(Config::get('images.full_size') . $filename );
+        $image = $manager->make( $photo )->save($this->dirOrigin . $filename );
 
         return $image;
     }
@@ -97,7 +98,7 @@ class ImageRepository
         $image = $manager->make( $photo )->resize(200, null, function ($constraint) {
             $constraint->aspectRatio();
         })
-            ->save( Config::get('images.icon_size')  . $filename );
+            ->save( $this->dirIcon  . $filename );
 
         return $image;
     }
@@ -107,9 +108,6 @@ class ImageRepository
      */
     public function delete( $originalFilename)
     {
-
-        $full_size_dir = Config::get('images.full_size');
-        $icon_size_dir = Config::get('images.icon_size');
 
         $sessionImage = Image::where('original_name', 'like', $originalFilename)->first();
 
@@ -123,8 +121,8 @@ class ImageRepository
 
         }
 
-        $full_path1 = $full_size_dir . $sessionImage->filename;
-        $full_path2 = $icon_size_dir . $sessionImage->filename;
+        $full_path1 = $this->dirOrigin . $sessionImage->filename;
+        $full_path2 = $this->dirIcon . $sessionImage->filename;
 
         if ( File::exists( $full_path1 ) )
         {

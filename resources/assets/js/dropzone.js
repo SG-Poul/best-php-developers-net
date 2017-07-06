@@ -2069,6 +2069,22 @@
         // The setting up of the dropzone
         init:function() {
 
+            // Add server images
+            var myDropzone = this;
+
+            $.get('/server-images', function(data) {
+
+                $.each(data.images, function (key, value) {
+
+                    var file = {name: value.original, size: value.size};
+                    myDropzone.options.addedfile.call(myDropzone, file);
+                    myDropzone.options.thumbnail.call(myDropzone, file, 'img/' + value.server);
+                    myDropzone.emit("complete", file);
+                    photo_counter++;
+                    $("#photoCounter").text( "(" + photo_counter + ")");
+                });
+            });
+
             this.on("removedfile", function(file) {
 
                 $.ajax({

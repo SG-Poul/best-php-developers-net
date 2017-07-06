@@ -1,6 +1,7 @@
 @extends ('layouts.master')
 
 @section ('content')
+    <input type="hidden" value="{{ csrf_token() }}" id="csrf-token">
     <div class="container">
         <br/>
         <div class="row">
@@ -26,9 +27,6 @@
                                     <h4 style="text-align: center;color:#428bca;">Drop images in this area <span
                                                 class="glyphicon glyphicon-hand-down"></span></h4>
                                 </form>
-
-                                {!! Form::open(['files'=>true, 'id'=>'real-dropzone']) !!}
-
                             </div>
                         </div>
                     </div>
@@ -82,14 +80,9 @@
                                     </g>
                                 </svg>
                             </div>
-
                         </div>
                     </div>
                     <!-- End Dropzone Preview Template -->
-
-
-                    {!! Form::hidden('csrf-token', csrf_token(), ['id' => 'csrf-token']) !!}
-
                 @else
                     Amma not admin
                 @endif
@@ -101,7 +94,4 @@
             </div>
         </div>
     </div>
-
-
-
 @endsection

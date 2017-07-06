@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Image;
 use App\Logic\ImageRepository;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Input;
 
 class ImageController extends Controller
@@ -40,5 +42,24 @@ class ImageController extends Controller
         $response = $this->image->delete( $filename );
 
         return $response;
+    }
+
+    public function getServerImages()
+    {
+        $images = Image::get(['original_name', 'filename']);
+
+        $imageAnswer = [];
+
+        foreach ($images as $image) {
+            $imageAnswer[] = [
+                'original' => $image->original_name,
+                'server' => $image->filename,
+                'size' => File::size(public_path('images/' . $image->filename))
+            ];
+        }
+
+        return response()->json([
+            'images' => $imageAnswer
+        ]);
     }
 }
