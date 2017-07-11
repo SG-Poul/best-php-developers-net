@@ -24,6 +24,7 @@ Route::get('/services/{page}', 'SiteController@services')->name('services');
 Route::post('/edit', 'SiteController@edit');
 
 Route::get('/gallery', ['as' => 'upload', 'uses' => 'ImageController@getUpload']);
+Route::get('/gallery-edit', 'AdminController@gallery');
 Route::post('/upload-post', ['as' => 'upload-post', 'uses' =>'ImageController@postUpload']);
 Route::post('/upload/delete', ['as' => 'upload-remove', 'uses' =>'ImageController@deleteUpload']);
 Route::get('/server-images', ['as' => 'server-images', 'uses' => 'ImageController@getServerImages']);

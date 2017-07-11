@@ -33,4 +33,9 @@ class AdminController extends Controller
         auth()->logout();
         return redirect()->home();
     }
+
+    public function gallery()
+    {
+        if (Auth::check()) return view('admin.gallery');
+    }
 }
