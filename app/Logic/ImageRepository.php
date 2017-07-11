@@ -95,11 +95,8 @@ class ImageRepository
     public function icon( $photo, $filename )
     {
         $manager = new ImageManager();
-        $image = $manager->make( $photo )->resize(200, null, function ($constraint) {
-            $constraint->aspectRatio();
-        })
+        $image = $manager->make( $photo )->resize(200, 133)
             ->save( $this->dirIcon  . $filename );
-
         return $image;
     }
 
