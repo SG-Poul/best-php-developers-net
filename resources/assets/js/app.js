@@ -9,6 +9,7 @@ require('./bootstrap');
 
 require('./dropzone');
 
+
 require('./customScript');
 
 

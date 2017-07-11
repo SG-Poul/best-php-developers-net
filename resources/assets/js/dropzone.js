@@ -2055,7 +2055,7 @@
   // CONFIG
 
     var photo_counter = 0;
-    Dropzone.options.realDropzone = {
+    if ($("#preview-template").length !== 0) Dropzone.options.realDropzone = {
 
         uploadMultiple: false,
         parallelUploads: 100,
@@ -2078,7 +2078,7 @@
 
                     var file = {name: value.original, size: value.size};
                     myDropzone.options.addedfile.call(myDropzone, file);
-                    myDropzone.options.thumbnail.call(myDropzone, file, 'img/' + value.server);
+                    myDropzone.options.thumbnail.call(myDropzone, file, 'images/icon_size/' + value.server);
                     myDropzone.emit("complete", file);
                     photo_counter++;
                     $("#photoCounter").text( "(" + photo_counter + ")");

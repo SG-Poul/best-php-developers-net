@@ -84,7 +84,41 @@
                     </div>
                     <!-- End Dropzone Preview Template -->
                 @else
-                    Amma not admin
+
+                <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                        <div class="slides"></div>
+                        <h3 class="title"></h3>
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                        <a class="close">×</a>
+                        <a class="play-pause"></a>
+                        {{--<ol class="indicator"></ol>--}}
+                    </div>
+
+                    <div id="links">
+                        <a href="images/dsc2356-min.jpg" title="">
+                            <img src="images/icon_size/dsc2356-min.jpg" alt="">
+                        </a>
+                        <a href="images/dsc2361-min.jpg" title="">
+                            <img src="images/icon_size/dsc2361-min.jpg" alt="">
+                        </a>
+                        <a href="images/dsc2407-min.jpg" title="">
+                            <img src="images/icon_size/dsc2407-min.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <script src="/js/blueimp/blueimp-gallery.min.js"></script>
+                    <script>
+                            document.getElementById('links').onclick = function (event) {
+                                event = event || window.event;
+                                var target = event.target || event.srcElement,
+                                    link = target.src ? target.parentNode : target,
+                                    options = {index: link, event: event},
+                                    links = this.getElementsByTagName('a');
+                                blueimp.Gallery(links, options);
+                            };
+                    </script>
                 @endif
             </div>
             <div class="col-sm-3">
