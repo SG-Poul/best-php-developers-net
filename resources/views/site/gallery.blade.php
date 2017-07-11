@@ -97,16 +97,18 @@
                     </div>
 
                     <div id="links">
-                        <a href="images/dsc2356-min.jpg" title="">
-                            <img src="images/icon_size/dsc2356-min.jpg" alt="">
+                        @foreach ($images as $img)
+                        <a href="{{ $img['original'] }}" title="">
+                            <img src="{{ $img['icon'] }}" alt="">
                         </a>
-                        <a href="images/dsc2361-min.jpg" title="">
-                            <img src="images/icon_size/dsc2361-min.jpg" alt="">
-                        </a>
-                        <a href="images/dsc2407-min.jpg" title="">
-                            <img src="images/icon_size/dsc2407-min.jpg" alt="">
-                        </a>
+
+
+                        {{--<a href="images/dsc2407-min.jpg" title="">--}}
+                            {{--<img src="images/icon_size/dsc2407-min.jpg" alt="">--}}
+                        {{--</a>--}}
+                        @endforeach
                     </div>
+
 
                     <script src="/js/blueimp/blueimp-gallery.min.js"></script>
                     <script>

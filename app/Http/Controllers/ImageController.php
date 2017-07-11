@@ -18,7 +18,7 @@ class ImageController extends Controller
 
     public function getUpload()
     {
-        return view('site.gallery');
+        return view('site.gallery', ['images' => $this->getAllImages()]);
     }
 
     public function postUpload()
@@ -61,5 +61,21 @@ class ImageController extends Controller
         return response()->json([
             'images' => $imageAnswer
         ]);
+    }
+
+    public function getAllImages()
+    {
+        $images = Image::get(['original_name', 'filename']);
+
+        $imageAnswer = [];
+
+        foreach ($images as $image) {
+            $imageAnswer[] = [
+                'original' => '/images/' . $image->filename,
+                'icon' => '/images/icon_size/' . $image->filename,
+            ];
+        }
+
+        return $imageAnswer;
     }
 }
