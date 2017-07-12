@@ -16,3 +16,16 @@ $(".removeQuote").click((event)=>{
         }
     });
 });
+(function($) {
+    $.fn.goTo = function() {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top + 'px'
+        }, 'fast');
+        return this; // for chaining...
+    }
+})(jQuery);
+
+$('.quoteBtn').on('click', function(e) {
+    e.preventDefault();
+    $('.form-container').goTo();
+});

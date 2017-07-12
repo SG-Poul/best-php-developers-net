@@ -50,7 +50,7 @@
                             PHP developers who are expertly qualified and can add a great value to your projects</p>
                     </div>
                 </div>
-                <p><a class="btn btn-lg btn-primary" id="slide-button" href="#" role="button">Hire PHP Developers <span
+                <p><a class="btn btn-lg btn-primary quoteBtn" id="slide-button" href="#" role="button">Hire PHP Developers <span
                                 class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></p>
             </div>
         </div>
@@ -108,7 +108,7 @@
             </div>
 
             <div class="centered">
-                <p><a class="btn btn-lg btn-primary hire-button" href="#" role="button">
+                <p><a class="btn btn-lg btn-primary hire-button quoteBtn" href="#" role="button">
                         Hire PHP Developers
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     </a>
@@ -227,7 +227,7 @@
             </div>
             <div class="centered">
                 <br/>
-                <p><a class="btn btn-lg btn-primary hire-button" href="#" role="button">Hire PHP Developers <span
+                <p><a class="btn btn-lg btn-primary hire-button quoteBtn" href="#" role="button">Hire PHP Developers <span
                                 class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></p>
             </div>
         </div>
