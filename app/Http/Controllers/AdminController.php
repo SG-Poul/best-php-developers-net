@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Quote;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 
 class AdminController extends Controller
 {
@@ -37,5 +39,18 @@ class AdminController extends Controller
     public function gallery()
     {
         if (Auth::check()) return view('admin.gallery');
+    }
+
+    public function quotes ()
+    {
+        if (Auth::check()) return view('admin.quotes', ['quotes' => Quote::all()]);
+    }
+
+    public function deleteQuote ()
+    {
+        if (Auth::check()) {
+            Quote::destroy(Input::get('id'));
+            return 200;
+        }
     }
 }

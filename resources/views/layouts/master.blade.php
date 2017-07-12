@@ -20,7 +20,7 @@
 <body>
 
 @if(Auth::check())
-    @include('layouts.admin-bar')
+    @include('admin.admin-bar')
 @endif
 
 @include('layouts.header')

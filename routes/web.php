@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'SiteController@index')->name('home');
-Route::post('/quote', ['before' => 'csrf', 'QuoteController@quote']);
+Route::post('/quote', 'QuoteController@quote');
+Route::get('/quotes', 'AdminController@quotes');
+Route::post('/delete-quote', 'AdminController@deleteQuote');
 
 Auth::routes();
 
